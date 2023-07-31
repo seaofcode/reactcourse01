@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 
 import './index.css';
 
+const author = 'Johnny Joey Jones';
+const title = 'Unbroken Bonds of Battle';
+const img = './images/book1.jpg';
+
 const BookList = () => {
   return (
     <section className='booklist'>
@@ -15,15 +19,9 @@ const BookList = () => {
 };
 
 const Book = () => {
-  const author = 'Johnny Joey Jones';
-  const title = 'Unbroken Bonds of Battle';
-  // const img = ;
   return (
     <article className='book'>
-      <img
-        src='https://images-na.ssl-images-amazon.com/images/I/71vKs9fwurL._AC_UL600_SR600,400_.jpg'
-        alt='Unbroken Bonds of Battle'
-      />
+      <img src={img} alt={title} />
       <h2>{title}</h2>
       <h4>{author}</h4>
     </article>
