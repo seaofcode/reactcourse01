@@ -15,21 +15,19 @@ const BookList = () => {
 };
 
 const Book = () => {
+  const author = 'Johnny Joey Jones';
+  const title = 'Unbroken Bonds of Battle';
+  // const img = ;
   return (
     <article className='book'>
-      <Image />
-      <Title />
-      <Author />
+      <img
+        src='https://images-na.ssl-images-amazon.com/images/I/71vKs9fwurL._AC_UL600_SR600,400_.jpg'
+        alt='Unbroken Bonds of Battle'
+      />
+      <h2>{title}</h2>
+      <h4>{author}</h4>
     </article>
   );
-};
-
-const Image = () => (
-  <img src='https://images-na.ssl-images-amazon.com/images/I/71vKs9fwurL._AC_UL600_SR600,400_.jpg' />
-);
-const Title = () => <h2>Unbroken Bonds of Battle</h2>;
-const Author = () => {
-  return <h2>Johnny Joey Jones</h2>;
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
